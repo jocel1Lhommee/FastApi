@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "razer";
+  src: url('razer.ttf') format('truetype');
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    font-family:"razer", sans-serif;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  h1.dark-mode{background-color: black;
+    color: white;}
+  label.dark-mode{background-color: black;
+    color: white;}
+  div.dark-mode{background-color: black;
+    color: white;}
+  p.dark-mode{background-color: black;
+    color: white;}
+#modeButton{
+	color:white;
+	background-color:#197474;
+}
+
+p {
+    margin: 10px;
+    padding: 15px;
+}
+
+h1 {
+    text-align:center;
+    color:  #197474;
+}
+
+/* Styles pour le conteneur principal */
+.container {
+  width: 100%;
+  height: 100vh; /* ou une hauteur appropriée */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles pour le contenu fixe en haut */
+.top {
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Styles pour le conteneur des éléments flexibles */
+.flex-container {
+  display: flex;
+  flex-grow: 1; /* Permet au conteneur de remplir l'espace disponible en hauteur */
+  margin-top: 140px; /* Pour éviter que le contenu soit masqué par la div fixe en haut */
+}
+
+/* Styles pour la div fixe à gauche */
+.fixed-left {
+  background-color: #e6e6e6;
+  width: 200px; /* ou une largeur appropriée */
+  padding: 20px;
+}
+
+/* Styles pour la div flexible à droite */
+.flex-item {
+  background-color: #cccccc;
+  flex-grow: 1; /* Permet à cette div de remplir l'espace restant dans le conteneur */
+  padding: 20px;
+}
+
+.containerArticles {
+display: flex;
+flex-direction:column;
+width:100%
+}
+
+.article {
+    background-color: #e5e8e8;
+    border: solid;
+    border-width:1px;
+    margin:0 0px 0px 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0px 0px rgba(50, 50, 50, .5);
+}
+
+.bouton {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border: solid;
+    border-width:2px;
+    border-radius:0.5rem;
+    color: #fff;
+    background-color:  #197474;;
+    border-color: #197474;;
+ /*box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);*/
+}
+
+.bouton:hover {
+background-color: #28b7b7;
+border-color: #28b7b7;
+}
+
+.bouton:active:{
+background-color:  #197474;
+border-color:  #197474 ;
+}
+
+.bouton:disabled {
+background-color: #0d6efd;
+border-color: #0d6efd;
+}
