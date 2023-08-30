@@ -1,26 +1,25 @@
 @font-face {
-  font-family: "razer";
-  src: url('razer.ttf') format('truetype');
+    font-family: 'blank';
+    src: url('blank.otf') 
+	     format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     background-color: #000000;
     margin: 0px;
     padding: 0px;
-    font-family:"razer", sans-serif;
+    font-family:Courier New;
+}
+div.darl-mode{
+	color: red;
+	font-size:500%;
 }
 body.dark-mode {
     background-color: black;
     color: white;
   }
-  h1.dark-mode{background-color: black;
-    color: white;}
-  label.dark-mode{background-color: black;
-    color: white;}
-  div.dark-mode{background-color: black;
-    color: white;}
-  p.dark-mode{background-color: black;
-    color: white;}
 #modeButton{
 	color:white;
 	background-color:#197474;
